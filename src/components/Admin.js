@@ -26,10 +26,10 @@ class Admin extends React.Component {
 						 <option >20 pieds</option>
 						 <option >40 pieds</option>
 					 </select>
-					<input className="text-center form-control" type="text" placeholder="Ville de départ" value={tarif.villeD} onChange={(e) => this.traiterChangement(e, key)} />
-					<input className="text-center form-control" type="text" placeholder="Ville d'arrivée" value={tarif.villeA} onChange={(e) => this.traiterChangement(e, key)} />
-					<input className="text-center form-control" type="text" placeholder="Date de début" value={tarif.dateD} onChange={(e) => this.traiterChangement(e, key)} />
-					<input className="text-center form-control" placeholder="Date de fin de validité" value={tarif.dateFValidite} onChange={(e) => this.traiterChangement(e, key)} />
+					<input name="villeD" className="text-center form-control" type="text" placeholder="Ville de départ" value={tarif.villeD} onChange={(e) => this.traiterChangement(e, key)} />
+					<input name="villeA" className="text-center form-control" type="text" placeholder="Ville d'arrivée" value={tarif.villeA} onChange={(e) => this.traiterChangement(e, key)} />
+					<input name="dateD" className="text-center form-control" type="text" placeholder="Date de début" value={tarif.dateD} onChange={(e) => this.traiterChangement(e, key)} />
+					<input name="dateFValidite" className="text-center form-control" placeholder="Date de fin de validité" value={tarif.dateFValidite} onChange={(e) => this.traiterChangement(e, key)} />
 				</form>
 				<button onClick={() => this.props.supprimerTarif(key)} >Supprimer</button>
 			</div>
